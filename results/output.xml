@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-03-27T12:19:47.349495" rpa="false" schemaversion="5">
+<suite id="s1" name="Parking Garage" source="C:\Users\PapZoltan\Desktop\Informatika\Parking_Garage">
+<suite id="s1-s1" name="Teszt" source="C:\Users\PapZoltan\Desktop\Informatika\Parking_Garage\teszt.robot">
+<test id="s1-s1-t1" name="Sikeres bejelentkezes ervenyes felhasznalonevvel es jelszoval" line="14">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-03-27T12:19:47.522042" level="INFO">Opening browser 'chrome' to base url 'https://parking-garage-app.netlify.app'.</msg>
+<arg>https://parking-garage-app.netlify.app</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-27T12:19:47.521714" elapsed="1.131909"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>class:primary</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-27T12:19:48.654214" elapsed="0.012330"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-03-27T12:19:48.667139" level="INFO">Clicking element 'class:primary'.</msg>
+<arg>class:primary</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-27T12:19:48.666865" elapsed="0.043511"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-27T12:19:48.710659" elapsed="0.225494"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-03-27T12:19:48.936860" level="INFO">Typing text 'papzotyo@gmail.com' into text field '//*[@id="email"]'.</msg>
+<arg>//*[@id="email"]</arg>
+<arg>papzotyo@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-27T12:19:48.936523" elapsed="0.059804"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-03-27T12:19:48.997158" level="INFO">Typing text '1234' into text field '//*[@id="password"]'.</msg>
+<arg>//*[@id="password"]</arg>
+<arg>1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-27T12:19:48.996682" elapsed="0.041165"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2026-03-27T12:19:49.038395" level="INFO">Clicking button '//*[@id="login-button"]'.</msg>
+<arg>//*[@id="login-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-27T12:19:49.038132" elapsed="0.041477"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>Üdvözöljük a Parkolóház Rendszerben!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-27T12:19:49.079910" elapsed="1.320284"/>
+</kw>
+<kw name="Page Should Contain" owner="Selenium2Library">
+<msg time="2026-03-27T12:19:50.406925" level="INFO">Current page contains text 'Üdvözöljük a Parkolóház Rendszerben!'.</msg>
+<arg>Üdvözöljük a Parkolóház Rendszerben!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-27T12:19:50.400458" elapsed="0.006642"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-27T12:19:55.408455" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-27T12:19:50.407572" elapsed="5.001477"/>
+</kw>
+<kw name="Close Browser" owner="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-27T12:19:55.410182" elapsed="2.122983"/>
+</kw>
+<status status="PASS" start="2026-03-27T12:19:47.519282" elapsed="10.015727"/>
+</test>
+<test id="s1-s1-t2" name="Sikertelen bejelentkezes hibas jelszo eseten" line="27">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-03-27T12:19:57.556230" level="INFO">Opening browser 'chrome' to base url 'https://parking-garage-app.netlify.app'.</msg>
+<arg>https://parking-garage-app.netlify.app</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-27T12:19:57.555984" elapsed="0.955235"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>class:primary</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-27T12:19:58.511502" elapsed="0.024427"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2026-03-27T12:19:58.536465" level="INFO">Clicking button 'class:primary'.</msg>
+<msg time="2026-03-27T12:19:58.666305" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T12:19:58.666584" level="FAIL">Button with locator 'class:primary' not found.</msg>
+<arg>class:primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2026-03-27T12:19:58.536191" elapsed="0.135562">Button with locator 'class:primary' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-03-27T12:19:58.672076" elapsed="0.000107"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<arg>papzotyo@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:19:58.672373" elapsed="0.000106"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<arg>//*[@id="password"]</arg>
+<arg>wrong_password</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:19:58.672628" elapsed="0.000078"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<arg>//*[@id="login-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:19:58.672838" elapsed="0.000067"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>Üdvözöljük a Parkolóház Rendszerben!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-03-27T12:19:58.673021" elapsed="0.000061"/>
+</kw>
+<kw name="Page Should Contain" owner="Selenium2Library">
+<arg>Üdvözöljük a Parkolóház Rendszerben!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:19:58.673193" elapsed="0.000057"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-03-27T12:19:58.673414" elapsed="0.000063"/>
+</kw>
+<kw name="Close Browser" owner="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-03-27T12:19:58.673585" elapsed="0.000058"/>
+</kw>
+<status status="FAIL" start="2026-03-27T12:19:57.545903" elapsed="1.127908">Button with locator 'class:primary' not found.</status>
+</test>
+<test id="s1-s1-t3" name="Sikertelen bejelentkezes nem letezo felhasznaloval" line="39">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-03-27T12:19:58.680426" level="INFO">Opening browser 'chrome' to base url 'https://parking-garage-app.netlify.app'.</msg>
+<arg>https://parking-garage-app.netlify.app</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-27T12:19:58.680153" elapsed="1.564287"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>class:primary</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-27T12:20:00.244848" elapsed="0.013824"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2026-03-27T12:20:00.259454" level="INFO">Clicking button 'class:primary'.</msg>
+<msg time="2026-03-27T12:20:00.423695" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T12:20:00.423973" level="FAIL">Button with locator 'class:primary' not found.</msg>
+<arg>class:primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2026-03-27T12:20:00.259138" elapsed="0.169412">Button with locator 'class:primary' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:00.428914" elapsed="0.000160"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<arg>kitalaltamvalamit123@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:00.429308" elapsed="0.000124"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<arg>//*[@id="password"]</arg>
+<arg>nagyonjoerosjelszoehhezaletezofelhasznalohoz</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:00.429672" elapsed="0.000116"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<arg>//*[@id="login-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:00.429998" elapsed="0.000122"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>Üdvözöljük a Parkolóház Rendszerben!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:00.430347" elapsed="0.000117"/>
+</kw>
+<kw name="Page Should Contain" owner="Selenium2Library">
+<arg>Üdvözöljük a Parkolóház Rendszerben!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:00.430644" elapsed="0.000106"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:00.431118" elapsed="0.000134"/>
+</kw>
+<kw name="Close Browser" owner="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:00.431477" elapsed="0.000121"/>
+</kw>
+<status status="FAIL" start="2026-03-27T12:19:58.678044" elapsed="1.753815">Button with locator 'class:primary' not found.</status>
+</test>
+<test id="s1-s1-t4" name="Kotelezo mezok ellenorzese ures bejelentkezesi adatoknal" line="51">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-03-27T12:20:00.439606" level="INFO">Opening browser 'chrome' to base url 'https://parking-garage-app.netlify.app'.</msg>
+<arg>https://parking-garage-app.netlify.app</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-27T12:20:00.439361" elapsed="0.987563"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>class:primary</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-27T12:20:01.427197" elapsed="0.013337"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2026-03-27T12:20:01.441035" level="INFO">Clicking button 'class:primary'.</msg>
+<msg time="2026-03-27T12:20:01.567422" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T12:20:01.567641" level="FAIL">Button with locator 'class:primary' not found.</msg>
+<arg>class:primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2026-03-27T12:20:01.440788" elapsed="0.131335">Button with locator 'class:primary' not found.</status>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<arg>papzotyo@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:01.572384" elapsed="0.000103"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<arg>//*[@id="password"]</arg>
+<arg>1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:01.572713" elapsed="0.000148"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<arg>//*[@id="login-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:01.573090" elapsed="0.000115"/>
+</kw>
+<kw name="Page Should Contain" owner="Selenium2Library">
+<arg>Kérjük, töltse ki ezt a mezőt</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:01.573422" elapsed="0.000111"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:01.573736" elapsed="0.000109"/>
+</kw>
+<kw name="Close Browser" owner="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:01.574038" elapsed="0.000106"/>
+</kw>
+<kw name="Open Browser" owner="Selenium2Library">
+<arg>https://parking-garage-app.netlify.app</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:01.574438" elapsed="0.000109"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>class:primary</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:01.574742" elapsed="0.000104"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<arg>class:primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:01.575031" elapsed="0.000104"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:01.575323" elapsed="0.000103"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<arg>papzotyo@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:01.575614" elapsed="0.000103"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<arg>//*[@id="login-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:01.575902" elapsed="0.000101"/>
+</kw>
+<kw name="Page Should Contain" owner="Selenium2Library">
+<arg>Kérjük, töltse ki ezt a mezőt</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:01.576187" elapsed="0.000105"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:01.576474" elapsed="0.000102"/>
+</kw>
+<kw name="Close Browser" owner="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:01.576836" elapsed="0.000105"/>
+</kw>
+<status status="FAIL" start="2026-03-27T12:20:00.437033" elapsed="1.140143">Button with locator 'class:primary' not found.</status>
+</test>
+<test id="s1-s1-t5" name="Hibauzenet helyes megjelenitese sikertelen bejelentkezesnel" line="73">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-03-27T12:20:01.587116" level="INFO">Opening browser 'chrome' to base url 'https://parking-garage-app.netlify.app'.</msg>
+<arg>https://parking-garage-app.netlify.app</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-27T12:20:01.586732" elapsed="1.696290"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>class:primary</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-27T12:20:03.283337" elapsed="0.014269"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2026-03-27T12:20:03.298256" level="INFO">Clicking button 'class:primary'.</msg>
+<msg time="2026-03-27T12:20:03.449843" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T12:20:03.450068" level="FAIL">Button with locator 'class:primary' not found.</msg>
+<arg>class:primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2026-03-27T12:20:03.297976" elapsed="0.156850">Button with locator 'class:primary' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:03.455097" elapsed="0.000109"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<arg>papzotyo@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:03.455447" elapsed="0.000148"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<arg>//*[@id="password"]</arg>
+<arg>wrong_password</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:03.455818" elapsed="0.000114"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<arg>//*[@id="login-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:03.456133" elapsed="0.000112"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>Üdvözöljük a Parkolóház Rendszerben!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:03.456459" elapsed="0.000115"/>
+</kw>
+<kw name="Page Should Contain" owner="Selenium2Library">
+<arg>Üdvözöljük a Parkolóház Rendszerben!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:03.456779" elapsed="0.000112"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:03.457200" elapsed="0.000115"/>
+</kw>
+<kw name="Close Browser" owner="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:03.457507" elapsed="0.000103"/>
+</kw>
+<status status="FAIL" start="2026-03-27T12:20:01.582344" elapsed="1.875510">Button with locator 'class:primary' not found.</status>
+</test>
+<test id="s1-s1-t6" name="Kijelentkezes utan vedett oldalak eleresenek tiltasa" line="85">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-03-27T12:20:03.465208" level="INFO">Opening browser 'chrome' to base url 'https://parking-garage-app.netlify.app'.</msg>
+<arg>https://parking-garage-app.netlify.app</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-27T12:20:03.464824" elapsed="1.073541"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>class:primary</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-27T12:20:04.538763" elapsed="0.014655"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2026-03-27T12:20:04.554071" level="INFO">Clicking button 'class:primary'.</msg>
+<msg time="2026-03-27T12:20:04.699295" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T12:20:04.699642" level="FAIL">Button with locator 'class:primary' not found.</msg>
+<arg>class:primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2026-03-27T12:20:04.553795" elapsed="0.149218">Button with locator 'class:primary' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.703259" elapsed="0.000098"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<arg>papzotyo@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.703534" elapsed="0.000094"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<arg>//*[@id="password"]</arg>
+<arg>1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.703772" elapsed="0.000068"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<arg>//*[@id="login-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.703956" elapsed="0.000060"/>
+</kw>
+<kw name="Page Should Contain Element" owner="Selenium2Library">
+<arg>/html/body/div/main/div/div[2]/img</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.704128" elapsed="0.000059"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.704297" elapsed="0.000063"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<arg>/html/body/div/nav/div[1]/button/i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.704528" elapsed="0.000066"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<arg>/html/body/div/nav/div[2]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.704705" elapsed="0.000059"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.704871" elapsed="0.000059"/>
+</kw>
+<kw name="Page Should Not Contain Element" owner="Selenium2Library">
+<arg>/html/body/div/main/div/div[2]/img</arg>
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.705036" elapsed="0.000063"/>
+</kw>
+<kw name="Page Should Not Contain Button" owner="Selenium2Library">
+<arg>/html/body/div/main/div/div[1]/button</arg>
+<doc>Verifies button ``locator`` is not found from current page.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.705205" elapsed="0.000056"/>
+</kw>
+<kw name="Page Should Not Contain" owner="Selenium2Library">
+<arg>Parkolás összesítő</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.705364" elapsed="0.000059"/>
+</kw>
+<kw name="Page Should Not Contain" owner="Selenium2Library">
+<arg>Parkolóhelyek térképe</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.705536" elapsed="0.000057"/>
+</kw>
+<kw name="Page Should Not Contain" owner="Selenium2Library">
+<arg>Profil adatok</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.705700" elapsed="0.000054"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.705951" elapsed="0.000066"/>
+</kw>
+<kw name="Close Browser" owner="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-03-27T12:20:04.706127" elapsed="0.000057"/>
+</kw>
+<status status="FAIL" start="2026-03-27T12:20:03.461983" elapsed="1.244346">Button with locator 'class:primary' not found.</status>
+</test>
+<status status="FAIL" start="2026-03-27T12:19:47.377226" elapsed="17.332512"/>
+</suite>
+<status status="FAIL" start="2026-03-27T12:19:47.353040" elapsed="17.358794"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Parking Garage" id="s1" pass="1" fail="5" skip="0">Parking Garage</stat>
+<stat name="Teszt" id="s1-s1" pass="1" fail="5" skip="0">Parking Garage.Teszt</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
